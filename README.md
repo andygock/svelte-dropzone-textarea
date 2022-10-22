@@ -2,6 +2,12 @@
 
 Drag and drop a file into a `<textarea>` Svelte component and load the file's content into the textarea.
 
+## Install
+
+    npm install svelte-dropzone-textarea
+
+## Usage
+
 Example usage:
 
 ```svelte
@@ -16,6 +22,7 @@ Example usage:
   };
 
   const handleUpdate = (text) => {
+    date = text;
     console.log(`handleUpdate(): ${text.length} bytes`);
   };
 </script>
@@ -24,6 +31,8 @@ Example usage:
 <DropzoneTextarea {handleRead} {handleUpdate} />
 <p>data is {data.length} characters long</p>
 ```
+
+Demo on [StackBlitz](https://stackblitz.com/edit/svelte-dropzone-textarea?file=src%2FApp.svelte)
 
 ## Props
 
