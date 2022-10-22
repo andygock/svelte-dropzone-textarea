@@ -3,6 +3,7 @@
   "svelte": "src/index.js",
   "name": "svelte-dropzone-textarea",
   "type": "module",
+  "version": "0.1.0",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w"
